@@ -1,0 +1,28 @@
+{
+  "name": "fast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/fast.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wski/fast.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wski/fast/issues"
+  },
+  "homepage": "https://github.com/wski/fast#readme",
+  "dependencies": {
+    "archiver": "^2.0.3",
+    "chalk": "^2.1.0",
+    "command-line-args": "^4.0.7"
+  },
+  "bin": {
+    "fast": "bin/fast.js"
+  },
+  "preferGlobal": true
+}
