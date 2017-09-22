@@ -15,7 +15,8 @@ const parseCliOptions = () => {
   const cliopts = commandLineArgs(optionDefinitions)
 
   if (typeof cliopts !== 'object') {
-    return console.error(`Fast::boot(): Error: Invalid cliopts, expected object, got ${typeof cliopts}`, cliopts)
+    console.error(`Fast::parseCliOptions(): Error: Invalid cliopts, expected object, got ${typeof cliopts}`, cliopts)
+    return {}
   }
 
   return cliopts
