@@ -11,7 +11,7 @@ const optionDefinitions = [
   { name: 'key', alias: 'k', type: String }
 ]
 
-const parseCliArgs = () => {
+const parseCliOptions = () => {
   const cliopts = commandLineArgs(optionDefinitions)
 
   if (typeof cliopts !== 'object') {
@@ -21,7 +21,7 @@ const parseCliArgs = () => {
   return cliopts
 }
 
-const cliopts = parseCliArgs()
+const cliopts = parseCliOptions()
 
 const boot = (args) => {
   try {
