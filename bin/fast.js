@@ -20,11 +20,6 @@ const boot = (args) => {
     }
 
     if (cliopts.init) {
-      if (typeof global.init !== 'function') {
-        console.error('Fast::boot(): Error: function init is undefined!')
-        return console.error('Fast::boot(): Try reinstalling via: npm i -g .')
-      }
-
       return invoke('init', args)
     }
 
