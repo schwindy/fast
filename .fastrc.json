@@ -1,6 +1,0 @@
-{
-  "name": "MyFastProject",
-  "dir": "deploy",
-  "dest": "fastbeta.com",
-  "deployKey": "abc123youshouldreallychangeme"
-}
