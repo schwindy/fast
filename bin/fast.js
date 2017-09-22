@@ -54,3 +54,4 @@ const invoke = (method, args) => {
 }
 
 boot()
+
