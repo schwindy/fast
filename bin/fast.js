@@ -11,7 +11,17 @@ const optionDefinitions = [
   { name: 'key', alias: 'k', type: String }
 ]
 
-const cliopts = commandLineArgs(optionDefinitions)
+const parseCliArgs = () => {
+  const cliopts = commandLineArgs(optionDefinitions)
+
+  if (typeof cliopts !== 'object') {
+    return console.error(`Fast::boot(): Error: Invalid cliopts, expected object, got ${typeof cliopts}`, cliopts)
+  }
+
+  return cliopts
+}
+
+const cliopts = parseCliArgs()
 
 const boot = (args) => {
   try {
